@@ -1,13 +1,14 @@
-# 1. Entrada de dados: leitura das 4 notas digitadas pelo usuário
-nota1 = float(input("Digite a primeira nota: "))
-nota2 = float(input("Digite a segunda nota: "))
-nota3 = float(input("Digite a terceira nota: "))
-nota4 = float(input("Digite a quarta nota: "))
+v1 = int(input("Informe o valor inteiro 1: "))
+v2 = int(input("Informe o valor inteiro 2: "))
+v3 = int(input("Informe o valor inteiro 3: "))
 
-# 2. Processamento: cálculo da média aritmética das notas
-media = (nota1 + nota2 + nota3 + nota4) / 4
 
-# 3. Saída de dados: exibição das notas digitadas e da média final
-print(f"\nNotas digitadas: {nota1}, {nota2}, {nota3} e {nota4}")
-print(f"Média aritmética: {media:.2f}")
+if v3 > v1 and v3 < v2:
+    print(f"o valor {v3} esta entre {v1} e {v2}")
+elif v3 < v1:
+    print(f"o valor de {v3} é menor que {v1}")
+elif v3 >v2:
+    print(f"o valor de {v3} é maior que {v2}")
+else:
+    print(f"o valor de {v3} é igual a {v1} ou {v2}")
     
