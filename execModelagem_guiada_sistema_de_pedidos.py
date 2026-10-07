@@ -10,7 +10,7 @@ class ItemPedido:
                  quantidade: int) -> None:
       self.produto =  produto
       self.quantidade = quantidade
-list   @property
+   @property
    def subtotal(self) -> float:
        return self.produto.preco * self.quantidade
 
@@ -30,5 +30,12 @@ class Pedido:
     @property
     def total(self) ->float:
         return sum(i.subtotal for i in self.itens)
+
+class ItensTotal:
+    def __str__(self, totalitens: int , total: int)->int:
+        self.totalitens=totalitens
+        self.total=total
+       
+
 
    
